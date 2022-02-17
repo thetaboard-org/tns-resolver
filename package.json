@@ -18,6 +18,8 @@
   "homepage": "https://github.com/thetaboard-org/tns-resolver#readme",
   "dependencies": {
     "ethereum-checksum-address": "^0.0.7",
-    "ethers": "^5.5.4"
+    "ethers": "^5.5.4",
+    "trim-newlines": "^4.0.1",
+    "yargs-parser": ">=13.1.2"
   }
 }
