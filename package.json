@@ -1,0 +1,23 @@
+{
+  "name": "tns-resolver",
+  "version": "1.0.0",
+  "description": "Resolve TNS reverseName and addressRecord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thetaboard-org/tns-resolver.git"
+  },
+  "author": "Thetaboard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thetaboard-org/tns-resolver/issues"
+  },
+  "homepage": "https://github.com/thetaboard-org/tns-resolver#readme",
+  "dependencies": {
+    "ethereum-checksum-address": "^0.0.7",
+    "ethers": "^5.5.4"
+  }
+}
