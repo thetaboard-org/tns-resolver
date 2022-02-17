@@ -16,10 +16,12 @@
     "url": "https://github.com/thetaboard-org/tns-resolver/issues"
   },
   "homepage": "https://github.com/thetaboard-org/tns-resolver#readme",
+  "devDependencies": {
+    "yargs-parser": ">=13.1.2",
+    "trim-newlines": ">=3.0.1"
+  },
   "dependencies": {
     "ethereum-checksum-address": "^0.0.7",
-    "ethers": "^5.5.4",
-    "trim-newlines": "^4.0.1",
-    "yargs-parser": ">=13.1.2"
+    "ethers": "^5.5.4"
   }
 }
