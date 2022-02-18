@@ -17,7 +17,7 @@ export const getDomainName = async(address) => {
             if (domain) {
                 const addressRecord = await getAddressRecord(domain)
                 if (addressRecord && addressRecord === checksummedAddress) {
-                    return domain
+                    return domain + ".theta"
                 }
             }    
         }

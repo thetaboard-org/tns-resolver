@@ -19,7 +19,7 @@ import { getDomainName } from 'tns-resolver';
 const domainName = await getDomainName(address);
 console.log(domainName);
 // will return the domain name or null if no domain name is assigned on this address
-// i.e. will log 'domainname' or null
+// i.e. will log 'domainname.theta' or null
 ```
 
 ### Get address from a domain name
