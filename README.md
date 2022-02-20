@@ -8,7 +8,7 @@ npm install tns-resolver
 ### Import
 To import tns-resolver use the following statement:
 ```js script
-import { getDomainName, getAddress } from 'tns-resolver';
+import { getDomainName, getDomainNames, getAddress } from 'tns-resolver';
 ```
 
 ### Get domain name from an address
@@ -18,20 +18,8 @@ import { getDomainName } from 'tns-resolver';
 
 const domainName = await getDomainName(address);
 console.log(domainName);
-// will return the domain name or null if no domain name is assigned on this address
-// i.e. will log 'domainname.theta' or null
-```
-
-### Get address from a domain name
-To get the address from a domain name use the ```getAddress``` function such as: 
-```js script
-import { getAddress } from 'tns-resolver';
-
-const address = await getAddress(domainName);
-console.log(address);
-/* will return the address or null if the domain 
-is not assigned to an address
-i.e. will log '0x123...' or null */
+/* will return the domain name or null if no domain name is assigned on this address
+ i.e. will log 'domainname.theta' or null */
 ```
 
 ### Get domain names for a list of addresses
@@ -44,5 +32,17 @@ const domainNames = await getDomainNames(addresses);
 console.log(domainNames);
 /* will return an object where the key is the address 
 and the value is the domain name or am empty string if no domain name is assigned on this address
-i.e. will log { "0x123...": "domainname.theta", "0x456...": "" } 
+i.e. will log { "0x123...": "domainname.theta", "0x456...": "" } */
+```
+
+### Get address from a domain name
+To get the address from a domain name use the ```getAddress``` function such as: 
+```js script
+import { getAddress } from 'tns-resolver';
+
+const address = await getAddress(domainName);
+console.log(address);
+/* will return the address or null if the domain 
+is not assigned to an address
+i.e. will log '0x123...' or null */
 ```
