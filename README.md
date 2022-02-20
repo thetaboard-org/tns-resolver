@@ -18,7 +18,8 @@ import { getDomainName } from 'tns-resolver';
 
 const domainName = await getDomainName(address);
 console.log(domainName);
-/* will return the domain name or null if no domain name is assigned on this address
+/* will return the domain name 
+ or null if no domain name is assigned on this address
  i.e. will log 'domainname.theta' or null */
 ```
 
@@ -30,9 +31,11 @@ import { getDomainNames } from 'tns-resolver';
 const addresses = ['0x123...', '0x456...'];
 const domainNames = await getDomainNames(addresses);
 console.log(domainNames);
-/* will return an object where the key is the address 
-and the value is the domain name or am empty string if no domain name is assigned on this address
-i.e. will log { "0x123...": "domainname.theta", "0x456...": "" } */
+/* will return an object where 
+ the key is the address 
+ the value is the domain name or 
+ an empty string if no domain name is assigned on this address
+ i.e. will log { "0x123...": "domainname.theta", "0x456...": "" } */
 ```
 
 ### Get address from a domain name
