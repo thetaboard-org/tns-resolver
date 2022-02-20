@@ -29,6 +29,20 @@ import { getAddress } from 'tns-resolver';
 
 const address = await getAddress(domainName);
 console.log(address);
-// will return the address or null if the domain is not assigned to an address
-// i.e. will log '0x123...' or null
+/* will return the address or null if the domain 
+is not assigned to an address
+i.e. will log '0x123...' or null */
+```
+
+### Get domain names for a list of addresses
+If you need to process many addresses (eg: showing domain names of transaction histories), use the ```getDomainNames``` function such as: 
+```js script
+import { getDomainNames } from 'tns-resolver';
+
+const addresses = ['0x123...', '0x456...'];
+const domainNames = await getDomainNames(addresses);
+console.log(domainNames);
+/* will return an object where the key is the address 
+and the value is the domain name or am empty string if no domain name is assigned on this address
+i.e. will log { "0x123...": "domainname.theta", "0x456...": "" } 
 ```
