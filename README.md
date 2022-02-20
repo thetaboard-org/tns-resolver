@@ -44,6 +44,7 @@ To get the address from a domain name use the ```getAddress``` function such as:
 ```js script
 import { getAddress } from 'tns-resolver';
 
+const domainName = 'test.theta';
 const address = await getAddress(domainName);
 console.log(address);
 /* will return the address or null if the domain 

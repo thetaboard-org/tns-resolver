@@ -1,6 +1,6 @@
 {
   "name": "tns-resolver",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Resolve TNS reverseName and addressRecord",
   "main": "index.js",
   "scripts": {
