@@ -16,6 +16,7 @@ To get the domain name from an address use the ```getDomainName``` function such
 ```js script
 import { getDomainName } from 'tns-resolver';
 
+const address = '0x123...';
 const domainName = await getDomainName(address);
 console.log(domainName);
 /* will return the domain name 
