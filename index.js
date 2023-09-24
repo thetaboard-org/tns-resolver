@@ -10,11 +10,11 @@ const defaultRpc = 'https://eth-rpc-api.thetatoken.org/rpc'
 
 
 const getResolvercontract = (provider) => {
-    return new ethers.Contract("0x9f0a9D6788FA98E50Ed1cA062abd1F69BC6C3A12", resolverABI, provider)
+    return new ethers.Contract("0x428101CB7a0D22587a6f098A518c36Af2a1b2E31", resolverABI, provider)
 }
 
 const getReverseRecordsContract = (provider) => {
-    return new ethers.Contract("0xE6E9371993126e67B38041c2eE032480009AAd8C", reverseRecordsABI, provider)
+    return new ethers.Contract("0x5aA729cB43FDcC26CA947Dfb1Cbe11cc8d245B9C", reverseRecordsABI, provider)
 }
 
 const getAddressRecord = async(domain, provider) => {
